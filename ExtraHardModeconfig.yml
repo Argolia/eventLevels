@@ -97,37 +97,37 @@ ExtraHardMode:
     Enhanced Environmental Injuries:
       Enable: true
       Fall:
-        Dmg Multiplier: 2.0
+        Dmg Multiplier: 3.0
         Potion Type: SLOW
-        Duration (ticks): 120
+        Duration (ticks): 130
         Amplifier: 2
       Explosion:
-        Dmg Multiplier: 1.0
+        Dmg Multiplier: 2.0
         Potion Type: CONFUSION
-        Duration (ticks): 340
+        Duration (ticks): 350
         Amplifier: 3
       Suffocation:
-        Dmg Multiplier: 5.0
+        Dmg Multiplier: 6.0
         Potion Type: NONE
         Duration (ticks): 0
         Amplifier: 0
       Lava:
-        Dmg Multiplier: 2.0
+        Dmg Multiplier: 3.0
         Potion Type: NONE
         Duration (ticks): 0
         Amplifier: 0
       Burning:
-        Dmg Multiplier: 1.0
+        Dmg Multiplier: 2.0
         Potion Type: BLINDNESS
         Duration (ticks): 40
         Amplifier: 1
       Starvation:
-        Dmg Multiplier: 2.0
+        Dmg Multiplier: 3.0
         Potion Type: NONE
         Duration (ticks): 0
         Amplifier: 0
       Drowning:
-        Dmg Multiplier: 2.0
+        Dmg Multiplier: 3.0
         Potion Type: NONE
         Duration (ticks): 0
         Amplifier: 0
@@ -138,12 +138,12 @@ ExtraHardMode:
     # After respawn, the player won't have a full health and food bar.
     Death:
       Loose Items On Death:
-        Enable: false
+        Enable: true
         # Percentage of all of the players items that will get lost on death.
         Percentage: 0
         # Damage some tools from the list instead of completely removing them.
         # Encourages players to use more valuable tools as they won't completely loose them on death.
-        Damage Tools By Percentage: 0
+        Damage Tools By Percentage: 20
         # If an already heavily damaged tool should be kept or completely destroyed.
         Keep Heavily Damaged Tools: true
         # Tool settings apply only to these tools
@@ -155,7 +155,7 @@ ExtraHardMode:
         # These items will never be removed on death.
         Blacklisted Items: []
       Override Respawn Health:
-        Enable: false
+        Enable: true
         # Percentage of total health that the player will spawn with. Works with custom max health.
         Percentage: 75
       # How many food hunches a player will spawn with
@@ -196,7 +196,7 @@ ExtraHardMode:
     More Monsters:
       Max Y: 55
       # A simple multiplier to increase spawns under ground by increasing the packspawning size.
-      Multiplier: 2
+      Multiplier: 5
     Monsters Spawn In Light:
       Max Y: 50
       # 0-3: bats spawning, 0-7 normal mob spawning, 8-11 mobs are hostile but don't burn, 12+ mobs burn
@@ -243,7 +243,7 @@ ExtraHardMode:
       Percentage: 10
       Player Fireticks: 40
     Shoot Silverfish:
-      Enable: false
+      Enable: true
       Percent: 20
       Kill Silverfish After Skeleton Died: true
       Limit To X Spawned At A Time: 5
@@ -261,7 +261,7 @@ ExtraHardMode:
     Drop Tnt On Death:
       Percent: 20
       Max Y: 50
-    Charged Creepers Explode On Damage: false
+    Charged Creepers Explode On Damage: true
     Fire Triggers Explosion:
       Enable: true
       Firework Count: 3
@@ -284,7 +284,7 @@ ExtraHardMode:
     Always Drop Netherwart In Fortresses: true
     Percent Chance to Drop Netherwart Elsewhere In Nether: 25
     Spawn on Lighting Strikes:
-      Enable: false
+      Enable: true
   Ghasts:
     # Reduce the damage arrows do to Ghasts to make fights with Ghasts more challenging.
     Arrows Do % Damage: 20
@@ -327,10 +327,10 @@ ExtraHardMode:
       # Maximum amount of animals allowed in a small area before they start dying
       Threshold: 10
   Additional Falling Blocks:
-    Enable: false
+    Enable: true
     Break Torches: true
     # Whether a falling block that is broken by an obstructing block should drop as an item
-    Drop As Items: false
+    Drop As Items: true
     # When a falling block lands it checks if the blocks around it should fall as well. Can cascade downwards infinitely.
     Landed Blocks Can Cause Blocks To Fall: true
     # Should a falling block damage players when it lands on them.

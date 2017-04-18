@@ -163,7 +163,7 @@ ExtraHardMode:
     # Adds a weight system to your inventory. If your inventory exceeds the weight you will be pulled down 
     # and eventually drown. This is to encourage players to use boats and make swimming up waterfalls harder.
     No Swimming When Too Heavy:
-      Enable: false
+      Enable: true
       # Set to false if you want to exempt players from drowning when swimming up 1x1 water streams.
       Block Elevators/Waterfalls: true
       # The maximum inventory weight you can have before starting to drown.
@@ -228,7 +228,7 @@ ExtraHardMode:
       Placed Skulls Drop Percentage: 5
       # Percentage for the 1st respawn to occur. To reduce the amount of consecutive respawns the percentage reduced by 1/n respawns.
       # F.e 1: 50%, 2: 1/2 of 50% = 25%, 3: 1/3 of 25% = 7.5% and so on
-      Percent: 0
+      Percent: 50
   Skeletons:
     Shoot Snowballs:
       Enable: true
@@ -239,7 +239,7 @@ ExtraHardMode:
       Percent: 30
       Knockback Player Velocity: 1.0
     Shoot Fireballs:
-      Enable: false
+      Enable: true
       Percentage: 10
       Player Fireticks: 40
     Shoot Silverfish:
@@ -292,11 +292,11 @@ ExtraHardMode:
     Drops Multiplier: 5
   Endermen:
     # No more easy killing by standing under a 3 high roof! An enderman may teleport a Player. Makes fights with enderman challenging and dangerous.
-    May Teleport Players: false
+    May Teleport Players: true
   Witches:
     # Includes spawning of baby zombies, explosions and teleporting
-    Additional Attacks: false
-    Bonus Spawn Percent: 5
+    Additional Attacks: true
+    Bonus Spawn Percent: 10
   EnderDragon:
     Respawns: true
     Drops Dragonegg: true
@@ -311,7 +311,7 @@ ExtraHardMode:
     No Building Allowed: true
   Farming:
     Weak Crops:
-      Enable: false
+      Enable: true
       Loss Rate: 25
       Infertile Deserts: true
       Snow Breaks Crops: true

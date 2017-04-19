@@ -85,7 +85,7 @@ ExtraHardMode:
     # to not set themselves on fire.
     Breaking Netherrack Starts Fire Percent: 20
     # Blocks jumping and placing a block directly beneath you and branching out with no blocks to support
-    Limited Block Placement: false
+    Limited Block Placement: true
     # The trunk and branches of a tree will fall and potentially injure you.
     # It makes it easier to chop trees, but you have to watch out a little for the falling logs.
     # Also by making logs of branches fall down most treetops should decay naturally.
@@ -140,7 +140,7 @@ ExtraHardMode:
       Loose Items On Death:
         Enable: true
         # Percentage of all of the players items that will get lost on death.
-        Percentage: 0
+        Percentage: 10
         # Damage some tools from the list instead of completely removing them.
         # Encourages players to use more valuable tools as they won't completely loose them on death.
         Damage Tools By Percentage: 20
@@ -157,7 +157,7 @@ ExtraHardMode:
       Override Respawn Health:
         Enable: true
         # Percentage of total health that the player will spawn with. Works with custom max health.
-        Percentage: 75
+        Percentage: 65
       # How many food hunches a player will spawn with
       Respawn Foodlevel: 15
     # Adds a weight system to your inventory. If your inventory exceeds the weight you will be pulled down 
@@ -196,13 +196,13 @@ ExtraHardMode:
     More Monsters:
       Max Y: 55
       # A simple multiplier to increase spawns under ground by increasing the packspawning size.
-      Multiplier: 5
+      Multiplier: 10
     Monsters Spawn In Light:
       Max Y: 50
       # 0-3: bats spawning, 0-7 normal mob spawning, 8-11 mobs are hostile but don't burn, 12+ mobs burn
       Max Light: 10
       # Spawns monsters at locations where player has been previously.
-      Percentage: 100
+      Percentage: 130
   Horses:
     Block Usage Of Chest Below: 55
   # Instead of speeding Zombies up, a Zombie will slow a player down for a few seconds when the player is hit by a zombie.
@@ -277,7 +277,7 @@ ExtraHardMode:
     Spawn With Nether Blaze Percent: 100
     Grow Into Blazes On Damage: true
   PigZombies:
-    Always Angry: false
+    Always Angry: true
     # This simple multiplier allows you to reduce the damage of PigZombies. They are a bit too tough otherwise.
     Dmg to players percent: 70
     # Add netherwart to the drops of pigzombies.
@@ -365,23 +365,23 @@ ExtraHardMode:
       Enable Custom Explosion: true
       Below Border:
         # 3 = default creeper, 4 = default tnt, 6 = default charged creeper
-        Explosion Power: 3
-        Set Fire: false
+        Explosion Power: 6
+        Set Fire: true
         World Damage: true
       Above Border:
-        Explosion Power: 3
-        Set Fire: false
+        Explosion Power: 6
+        Set Fire: true
         # Disabling worlddamage allows you to have explosions that damage players above ground, but doesn't make a mess.
         World Damage: true
     Charged Creeper:
       Enable Custom Explosion: true
       Below Border:
-        Explosion Power: 4
-        Set Fire: false
+        Explosion Power: 6
+        Set Fire: true
         World Damage: true
       Above Border:
-        Explosion Power: 4
-        Set Fire: false
+        Explosion Power: 6
+        Set Fire: true
         World Damage: true
     Tnt:
       Enable Custom Explosion: true
@@ -391,30 +391,30 @@ ExtraHardMode:
       # Change recipe to yield 3 tnt instead of 1
       Tnt Per Recipe: 3
       Below Border:
-        Explosion Power: 5
+        Explosion Power: 10
         Set Fire: false
         World Damage: true
       Above Border:
-        Explosion Power: 3
+        Explosion Power: 6
         Set Fire: false
         World Damage: true
     Blazes Explode On Death:
       Enable: true
       Below Border:
-        Explosion Power: 4
+        Explosion Power: 5
         Set Fire: true
         World Damage: true
       Above Border:
-        Explosion Power: 4
+        Explosion Power: 5
         Set Fire: true
         World Damage: true
     Ghasts:
       Enable Custom Explosion: true
       Below Border:
-        Explosion Power: 2
+        Explosion Power: 5
         Set Fire: true
         World Damage: true
       Above Border:
-        Explosion Power: 2
+        Explosion Power: 5
         Set Fire: true
         World Damage: true
